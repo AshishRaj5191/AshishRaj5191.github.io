@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Verdana;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(214, 111, 128);
+}
+
+img {
+    width: 70px;
+    border-radius:50%;
+}
+
+.navbar {
+    background-image: url('nezuko1.jpg');
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;    
+}
+
+.navbar ul a{
+    font-size: 15px;
+    font-weight: 700;
+    color: pink;
+    margin-left: 60px;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 2px solid pink;
+}
+
+.navbar ul a:hover {
+    color: rgb(238, 99, 122);
+    border-bottom: 2px solid rgb(238, 99, 122);
+}
+
+
+
+#search {
+    height: 30px;
+    width: 200px;
+    margin-left: 100px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#search:hover {
+    border: 2px solid rgb(238, 99, 122);   
+}
+
+button {
+    cursor: pointer;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 550;
+    margin: 8px;
+    padding: 5px;
+    background-color: pink;
+}
+
+button:hover {
+    color:deeppink;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: rgb(233, 45, 77);
+    height: 3px;
+    margin: 5px 3px;
+}
+
+
+.contain {
+    background-color: rgb(223, 204, 207);
+    height: 2000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #222f3d;
+    height: 550px;
+    width: 22%;
+    /* margin-top: 80px; */
+    border-radius: 10px;
+}
+
+.box p {
+    color: pink;
+    text-align: center;
+    padding-top: 430px;
+    font-weight: 700;
+}
+
+.box p:hover {
+    cursor: pointer;
+    color: palevioletred;
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    color: pink;
+}
+
+.box-image {
+    height: 400px;
+    background-size: cover;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2px;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.foot-panel1 a {
+    color: pink;
+    text-decoration: none;
+}
+
+.foot-panel1 a:hover {
+    color:rgb(214, 111, 128);
+}
+
+.footpanel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-logo {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.foot-panel4 {
+    background-color: #222f3d;
+    color: white;
+    height: 80px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.pages {
+    padding-top: 25px;
+}
+
+.copyright {
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1350px) {
+    .navbar {
+        flex-direction: column;
+        height: 60px;
+        position: static;
+    }
+
+    .list a{
+        margin-top: 15px;
+        display: flex;
+        height: 60px;
+    }
+    .navbar ul a {
+        border: none;
+        font-size: 20px;
+    }
+    button {    
+        margin-left: 100px;
+        width: 120px;
+    }
+    .burger {
+        display: block;
+    }
+    /* .v-class {
+        opacity: 0;
+    }
+    .h-nav {
+        height: 550px;
+    } */
+}
+
+
+@media only screen and (max-width:1200px)  {
+    .contain {
+        height: 7000px;
+    }
+    
+    .box {
+        width: 80%;
+        height: 550px;
+    }
+    #search {
+        margin-left: 0px;
+    }
+    button {
+        margin-left: 0px;
+    }
+}
